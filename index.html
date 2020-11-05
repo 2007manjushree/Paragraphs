@@ -52,9 +52,11 @@
             <br> <br>
             <button onclick="getparah2()">Get Paragraph 2</button>
         </div>
-
+<br><br>
     <div id="showParah1"></div>
+    <br><br>
     <div id="showParah2"></div>
+    <br><Br>
 
     <script>
 
@@ -63,9 +65,9 @@
         function getparah1() {
             for (var i=1 ; i <= 6; i++) {
                 inputs1.push(document.getElementById("para1_input_box_" + i).value);
+                inputs1.join(". ");
             }
 
-            inputs1.join(". ");
             document.getElementById("showParah1").innerHTML = inputs1;
             console.log(inputs1);
         }
@@ -75,9 +77,9 @@
         function getparah2() {
             for (var j=1 ; j <= 6; j++) {
                 inputs2.push(document.getElementById("para2_input_box_" + j).value);
+                inputs2.join(". ");
             }
             
-            inputs1.join(". ");
             document.getElementById("showParah2").innerHTML = inputs2;
             console.log(inputs2);
         }
